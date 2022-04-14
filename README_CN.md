@@ -34,11 +34,12 @@
 
 ## 快速入门
 
+# 改为对 DEFAULT_FILE_STORAGE+MEDIA_URL 的支持
+
 - 安装
-```bash
-    pip install django-mdeditor
-```
-```bash  # 改为对 DEFAULT_FILE_STORAGE+MEDIA_URL 的支持
+
+
+```bash  
    
    pip install git+https://github.com/lvjiyong/django-mdeditor.git
 
