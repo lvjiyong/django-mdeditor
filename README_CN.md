@@ -39,7 +39,9 @@
     pip install django-mdeditor
 ```
 ```bash  # 改为对 DEFAULT_FILE_STORAGE+MEDIA_URL 的支持
-   https://github.com/lvjiyong/django-mdeditor.git
+   
+   pip install git+https://github.com/lvjiyong/django-mdeditor.git
+
 ```
 
 
