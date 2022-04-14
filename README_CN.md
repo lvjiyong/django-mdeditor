@@ -38,6 +38,10 @@
 ```bash
     pip install django-mdeditor
 ```
+```bash  # 改为对 DEFAULT_FILE_STORAGE+MEDIA_URL 的支持
+   https://github.com/lvjiyong/django-mdeditor.git
+```
+
 
 - 在 `settings` 配置文件 `INSTALLED_APPS` 中添加 `mdeditor`:
 ```python
