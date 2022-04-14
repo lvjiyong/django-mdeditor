@@ -36,10 +36,13 @@
 ## Quick start
 
 - Installation.
-```bash
-    pipenv install django-mdeditor
-    # or
-    pip install django-mdeditor
+
+
+
+```bash  
+   
+   pip install git+https://github.com/lvjiyong/django-mdeditor.git
+
 ```
 
 - Add `mdeditor` to your INSTALLED_APPS setting like this:
