@@ -4,7 +4,7 @@ import os
 import time
 
 from django.conf import settings
-from django.core.files.storage import DefaultStorage
+from django.core.files.storage import default_storage
 from django.http import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views import generic
@@ -55,9 +55,8 @@ class UploadView(generic.View):
                                     '%s.%s' % (file_name, file_extension))
 
             url_path = str(url_path).replace('//', '/').strip('/')
-            storage = DefaultStorage()
-            storage.save(url_path, upload_image)
-            url = storage.url(url_path)
+            default_storage.save(url_path, upload_image)
+            url = default_storage.url(url_path)
             return JsonResponse({'success': 1,
                                  'message': "上传成功！",
                                  'url': url
